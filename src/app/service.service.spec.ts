@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { AService } from './service';
-import { serviceLink } from './service.service';
+import { ServiceLink } from './service.service';
 
 describe('ServiceLink', () => {
   let service: ServiceLink;
