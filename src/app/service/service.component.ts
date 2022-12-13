@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { AService } from '../service';
 import { ServiceLink } from './../service.service';
 
-
 @Component({
   selector: 'app-service',
   templateUrl: './service.component.html',
@@ -16,7 +15,7 @@ export class ServiceComponent implements OnInit {
 
   ngOnInit(): void {
     this.serviceLink.ObserTodos()
-      .subscribe(inter => this.todo = inter);
+      .subscribe( inter => this.todo = inter);
   }
 }
 
