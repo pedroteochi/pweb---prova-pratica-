@@ -2,19 +2,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { serviceComponent } from './service/service.component';
+
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    serviceComponent,
+    ServiceComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+
     HttpClientModule
   ],
   providers: [],

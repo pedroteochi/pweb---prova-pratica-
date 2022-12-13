@@ -8,7 +8,7 @@ import { ServiceLink } from '../service.service';
   templateUrl: './service.component.html',
   styleUrls: ['./service.component.css']
 })
-export class serviceComponent implements OnInit {
+export class ServiceComponent implements OnInit {
 
   service: AService[]=[]; //criando uma propriedade que pode ou não ser obrigatório que trás a nossa interface
 
