@@ -1,30 +1,16 @@
-<h2>Contas </h2>
-
-  <div class="data">
+<div>
     <table>
-      <tr class="itens">
-        <td>Id</td>
-        <td>Nome</td>
-        <td>Nome de Usuário</td>
-        <td>E-mail</td>
-      </tr>
-  
-      <tr *ngFor="let forService of service">
-        <td>{{forService.id}}</td>
-        <td>{{forService.name}}</td>
-        <td>{{forService.username}}</td>
-        <td>{{forService.email}}</td>
-      </tr>
+        <tr>
+            <th>UserId</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Completed</th>
+        </tr>
+        <tr *ngFor="let ToDos of todo">
+            <td>{{ToDos.userId}}</td>
+            <td>{{ToDos.id}}</td>
+            <td>{{ToDos.title}}</td>
+            <td><input type="checkbox" name="" id=""[checked]="ToDos.completed"/></td>
+        </tr>
     </table>
-  
-    <div class="container">
-      <div class="count">
-        <span>Number of Users:</span>
-        <p>{{user.length}}</p>
-      </div>
-  
-      
- 
-    </div>
-    
-  </div>  
+</div>
