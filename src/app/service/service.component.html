@@ -1,0 +1,30 @@
+<h2>Contas </h2>
+
+  <div class="data">
+    <table>
+      <tr class="itens">
+        <td>Id</td>
+        <td>Nome</td>
+        <td>Nome de Usuário</td>
+        <td>E-mail</td>
+      </tr>
+  
+      <tr *ngFor="let forService of service">
+        <td>{{forService.id}}</td>
+        <td>{{forService.name}}</td>
+        <td>{{forService.username}}</td>
+        <td>{{forService.email}}</td>
+      </tr>
+    </table>
+  
+    <div class="container">
+      <div class="count">
+        <span>Number of Users:</span>
+        <p>{{user.length}}</p>
+      </div>
+  
+      
+ 
+    </div>
+    
+  </div>  
