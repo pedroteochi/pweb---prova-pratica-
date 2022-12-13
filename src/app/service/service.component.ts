@@ -1,22 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { ToDo } from '../service';
-import { ToDoService } from '../service';
+import { AService } from '../service';
+import { ServiceLink } from './../service.service';
+
 
 @Component({
-  selector: 'app-to-do',
+  selector: 'app-service',
   templateUrl: './service.component.html',
   styleUrls: ['./service.component.css']
 })
 export class ServiceComponent implements OnInit {
 
+  todo: AService[]=[]; //criando uma propriedade que pode ou não ser obrigatório que trás a nossa interface
 
-  todo: Service[]=[];
-
-  constructor(private todoService: ToDoService) { }
+  constructor(private serviceLink: ServiceLink) { } //injetando no construtor o nosso serviço
 
   ngOnInit(): void {
-    this.todoService.getToDos()
-      .subscribe(todo => this.todo = todo);
+    this.serviceLink.ObserTodos()
+      .subscribe(inter => this.todo = inter);
   }
-
 }
+
+
